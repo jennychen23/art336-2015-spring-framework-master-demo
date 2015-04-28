@@ -1,0 +1,33 @@
+/* Base.scss */
+
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+}
+
+body {
+    @include body-font;
+}
+
+.headline, h1, h2, h3, h4 {
+    @include headline-font;
+    line-height: 1;
+    margin: 0;
+}
+
+b, strong {
+    @include body-font-bold;
+}
+
+i, em {
+    @include body-font-italic;
+}
+
+a, .btn, .toggler, .untoggler {
+    color: #fff;
+    text-decoration: underline;
+    transition: color 300ms linear;
+    &:hover {
+        color: darken(#fff,20%);
+    }
+}

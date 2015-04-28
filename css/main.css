@@ -1,0 +1,251 @@
+.row, .row-no-gutter {
+  max-width: 1140px;
+  margin: 0 auto;
+  width: 100%; }
+
+.row:after, .row-no-gutter:after {
+  clear: both;
+  content: "";
+  display: table; }
+
+[class^="col-"] {
+  float: left;
+  margin-bottom: 14px;
+  width: 100%; }
+
+@media screen and (min-width: 768px) {
+  .row [class^="col-"] {
+    margin-left: 7px;
+    margin-right: 7px; }
+
+  .row .col-1 {
+    width: calc(8.33333333% - 14px); }
+
+  .row .col-2 {
+    width: calc(16.66666666% - 14px); }
+
+  .row .col-3 {
+    width: calc(25% - 14px); }
+
+  .row .col-4 {
+    width: calc(33.33333333% - 14px); }
+
+  .row .col-5 {
+    width: calc(41.66666666% - 14px); }
+
+  .row .col-6 {
+    width: calc(50% - 14px); }
+
+  .row .col-7 {
+    width: calc(58.33333333% - 14px); }
+
+  .row .col-8 {
+    width: calc(66.66666666% - 14px); }
+
+  .row .col-9 {
+    width: calc(75% - 14px); }
+
+  .row .col-10 {
+    width: calc(83.33333333% - 14px); }
+
+  .row .col-11 {
+    width: calc(91.66666666% - 14px); }
+
+  .row .col-12 {
+    width: calc(100% - 14px); } }
+@media screen and (min-width: 768px) {
+  .row-no-gutter {
+    box-sizing: border-box;
+    padding-left: 7px;
+    padding-right: 7px; }
+
+  .row-no-gutter .col-1 {
+    width: 8.33333333%; }
+
+  .row-no-gutter .col-2 {
+    width: 16.66666666%; }
+
+  .row-no-gutter .col-3 {
+    width: 25%; }
+
+  .row-no-gutter .col-4 {
+    width: 33.33333333%; }
+
+  .row-no-gutter .col-5 {
+    width: 41.66666666%; }
+
+  .row-no-gutter .col-6 {
+    width: 50%; }
+
+  .row-no-gutter .col-7 {
+    width: 58.33333333%; }
+
+  .row-no-gutter .col-8 {
+    width: 66.66666666%; }
+
+  .row-no-gutter .col-9 {
+    width: 75%; }
+
+  .row-no-gutter .col-10 {
+    width: 83.33333333%; }
+
+  .row-no-gutter .col-11 {
+    width: 91.66666666%; }
+
+  .row-no-gutter .col-12 {
+    width: 100%; } }
+@media screen and (min-width: 768px) {
+  .row .col-1.center {
+    width: 8.33333333%;
+    margin-left: calc(91.66666666% / 2); }
+
+  .row .col-2.center {
+    width: 16.66666666%;
+    margin-left: calc(83.33333333% / 2); }
+
+  .row .col-3.center {
+    width: 25%;
+    margin-left: calc(75% / 2); }
+
+  .row .col-4.center {
+    width: 33.33333333%;
+    margin-left: calc(66.66666666% / 2); }
+
+  .row .col-5.center {
+    width: 41.66666666%;
+    margin-left: calc(58.33333333% / 2); }
+
+  .row .col-6.center {
+    width: 50%;
+    margin-left: calc(50% / 2); }
+
+  .row .col-7.center {
+    width: 58.33333333%;
+    margin-left: calc(41.66666666% / 2); }
+
+  .row .col-8.center {
+    width: 66.66666666%;
+    margin-left: calc(33.33333333% / 2); }
+
+  .row .col-9.center {
+    width: 75%;
+    margin-left: calc(25% / 2); }
+
+  .row .col-10.center {
+    width: 83.33333333%;
+    margin-left: calc(16.66666666% / 2); }
+
+  .row .col-11.center {
+    width: 91.66666666%;
+    margin-left: calc(8.33333333% / 2); } }
+.outer {
+  width: 100%;
+  margin-bottom: 14px; }
+
+.outer .row:last-of-type [class^="col-"] {
+  margin-bottom: 0; }
+
+.fixed {
+  position: fixed;
+  width: 100%;
+  z-index: 100; }
+
+/*
+.vcenter {
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	-webkit-box-align: center;
+	align-items: center;
+}
+*/
+.vcenter {
+  display: table; }
+
+.vcenter-c {
+  display: table-cell;
+  vertical-align: middle; }
+
+/* Globals.scss */
+/* Base.scss */
+img {
+  max-width: 100%;
+  vertical-align: bottom; }
+
+body {
+  font-family: "adobe-garamond-pro", "georgia", serif;
+  font-style: normal;
+  font-weight: 400; }
+
+.headline, h1, h2, h3, h4 {
+  font-family: "league-gothic", "verdana", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  margin: 0; }
+
+b, strong {
+  font-family: "adobe-garamond-pro", "georgia", serif;
+  font-style: normal;
+  font-weight: 700; }
+
+i, em {
+  font-family: "adobe-garamond-pro", "georgia", serif;
+  font-style: italic;
+  font-weight: 400; }
+
+a, .btn, .toggler, .untoggler {
+  color: #fff;
+  text-decoration: underline;
+  transition: color 300ms linear; }
+  a:hover, .btn:hover, .toggler:hover, .untoggler:hover {
+    color: #cccccc; }
+
+/* Layout.scss */
+@media screen and (min-width: 550px) and (max-width: 1140px) {
+  .row-no-gutter [class^="col-"] {
+    margin: 0; }
+
+  .gallery .col-3 {
+    width: calc(50% - 14px); } }
+/* Module.scss */
+.banner {
+  background: url("../img/seattle-lowrez.jpg") top center no-repeat;
+  background-size: cover;
+  height: 70%;
+  height: 70vh; }
+
+.banner-title {
+  background-color: #fff;
+  border-radius: 8px;
+  color: #262626;
+  line-height: 1;
+  padding: 8px; }
+
+.banner-title h1 {
+  font-size: 4em;
+  margin: 0; }
+
+.banner-title h2 {
+  font-size: 2em;
+  margin: 0; }
+
+.logo-bkg {
+  fill: pink; }
+
+.logo-eye {
+  fill: red; }
+
+.info-seattle, .info-link {
+  background-color: rebeccapurple;
+  box-sizing: border-box;
+  padding: 1em; }
+
+.info-seattle p:first-of-type {
+  margin-top: 0; }
+
+/* State.scss */
+
+/*# sourceMappingURL=main.css.map */
